@@ -1,4 +1,3 @@
-/musl/runtest.exe -w entry-static.exe argv
 /musl/basic/brk
 /musl/basic/chdir
 /musl/basic/close
