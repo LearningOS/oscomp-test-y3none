@@ -5,6 +5,7 @@
 #[macro_use]
 extern crate axlog;
 extern crate alloc;
+use axstd::println;
 
 mod syscall;
 
