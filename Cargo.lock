@@ -81,17 +81,31 @@ dependencies = [
 ]
 
 [[package]]
+name = "arceos_api"
+version = "0.1.0"
+dependencies = [
+ "axconfig",
+ "axerrno",
+ "axfeat",
+ "axhal",
+ "axio",
+ "axlog",
+ "axruntime",
+ "axsync",
+]
+
+[[package]]
 name = "arceos_posix_api"
 version = "0.1.0"
 dependencies = [
  "axalloc",
  "axconfig",
  "axerrno",
- "axfeat 0.1.0",
+ "axfeat",
  "axfs",
  "axhal",
  "axio",
- "axlog 0.1.0",
+ "axlog",
  "axnet",
  "axns",
  "axruntime",
@@ -256,23 +270,12 @@ dependencies = [
  "axdriver",
  "axfs",
  "axhal",
- "axlog 0.1.0",
+ "axlog",
  "axnet",
  "axruntime",
  "axsync",
  "axtask",
  "kspin",
-]
-
-[[package]]
-name = "axfeat"
-version = "0.1.0"
-source = "git+https://github.com/oscomp/arceos.git#4aee5b8d815d1fd3c4f24ed4cef6769ca1fe5674"
-dependencies = [
- "axfs",
- "axhal",
- "axlog 0.1.0 (git+https://github.com/oscomp/arceos.git)",
- "axruntime",
 ]
 
 [[package]]
@@ -339,7 +342,7 @@ dependencies = [
  "arm_pl011",
  "axalloc",
  "axconfig",
- "axlog 0.1.0",
+ "axlog",
  "bitflags 2.9.0",
  "cfg-if",
  "dw_apb_uart",
@@ -378,17 +381,6 @@ dependencies = [
 [[package]]
 name = "axlog"
 version = "0.1.0"
-dependencies = [
- "cfg-if",
- "crate_interface",
- "kspin",
- "log",
-]
-
-[[package]]
-name = "axlog"
-version = "0.1.0"
-source = "git+https://github.com/oscomp/arceos.git#4aee5b8d815d1fd3c4f24ed4cef6769ca1fe5674"
 dependencies = [
  "cfg-if",
  "crate_interface",
@@ -447,7 +439,7 @@ dependencies = [
  "axdriver",
  "axfs",
  "axhal",
- "axlog 0.1.0",
+ "axlog",
  "axmm",
  "axnet",
  "axtask",
@@ -456,6 +448,17 @@ dependencies = [
  "ctor_bare",
  "kernel_guard",
  "percpu",
+]
+
+[[package]]
+name = "axstd"
+version = "0.1.0"
+dependencies = [
+ "arceos_api",
+ "axerrno",
+ "axfeat",
+ "axio",
+ "kspin",
 ]
 
 [[package]]
@@ -1415,60 +1418,32 @@ checksum = "a8f112729512f8e442d81f95a8a7ddf2b7c6b8a1a6f509a95864142b30cab2d3"
 name = "starry"
 version = "0.1.0"
 dependencies = [
- "axerrno",
- "axfeat 0.1.0 (git+https://github.com/oscomp/arceos.git)",
- "axhal",
- "axlog 0.1.0 (git+https://github.com/oscomp/arceos.git)",
- "axtask",
- "linkme",
- "starry-api",
- "starry-core",
- "syscalls",
-]
-
-[[package]]
-name = "starry-api"
-version = "0.1.0"
-dependencies = [
  "arceos_posix_api",
  "axconfig",
  "axerrno",
  "axfs",
  "axhal",
- "axlog 0.1.0 (git+https://github.com/oscomp/arceos.git)",
- "axsync",
- "axtask",
- "bitflags 2.9.0",
- "macro_rules_attribute",
- "memory_addr",
- "num_enum",
- "starry-core",
- "static_assertions",
- "x86",
-]
-
-[[package]]
-name = "starry-core"
-version = "0.1.0"
-dependencies = [
- "arceos_posix_api",
- "axconfig",
- "axerrno",
- "axfs",
- "axhal",
- "axlog 0.1.0 (git+https://github.com/oscomp/arceos.git)",
  "axmm",
  "axns",
+ "axruntime",
+ "axstd",
  "axsync",
  "axtask",
  "bitflags 2.9.0",
  "crate_interface",
  "kernel-elf-parser",
  "linkme",
+ "log",
+ "macro_rules_attribute",
  "memory_addr",
+ "num_enum",
  "numeric-enum-macro",
  "percpu",
  "spin",
+ "static_assertions",
+ "syscalls",
+ "toml_edit",
+ "x86",
  "xmas-elf",
 ]
 
@@ -1791,7 +1766,3 @@ dependencies = [
  "quote",
  "syn 2.0.100",
 ]
-
-[[patch.unused]]
-name = "axstd"
-version = "0.1.0"
