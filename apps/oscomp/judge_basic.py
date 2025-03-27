@@ -452,20 +452,6 @@ target_testcases = [
     "test_brk",
     "test_chdir",
     "test_clone",
-<<<<<<< HEAD
-    "test_getpid",
-    "test_getppid",
-    "test_exit",
-    "test_wait",
-    "test_execve",
-    "test_waitpid",
-    "test_yield",
-    "test_gettimeofday",
-    "test_sleep",
-    "test_times"
-    "test_pipe",
-=======
->>>>>>> cfc5f30caaf6b68622cf2416d2f397c4004e3856
     "test_close",
     "test_dup2",
     "test_dup",

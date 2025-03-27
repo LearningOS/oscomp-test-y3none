@@ -36,20 +36,6 @@ basic_testlist=(
     "/$LIBC/basic/brk"
     "/$LIBC/basic/chdir"
     "/$LIBC/basic/clone"
-<<<<<<< HEAD
-    "/$LIBC/basic/getpid"
-    "/$LIBC/basic/getppid"
-    "/$LIBC/basic/exit"
-    "/$LIBC/basic/wait"
-    "/$LIBC/basic/execve"
-    "/$LIBC/basic/waitpid"
-    "/$LIBC/basic/yield"
-    "/$LIBC/basic/gettimeofday"
-    "/$LIBC/basic/sleep"
-    "/$LIBC/basic/times"
-    "/$LIBC/basic/pipe"
-=======
->>>>>>> cfc5f30caaf6b68622cf2416d2f397c4004e3856
     "/$LIBC/basic/close"
     "/$LIBC/basic/dup2"
     "/$LIBC/basic/dup"
