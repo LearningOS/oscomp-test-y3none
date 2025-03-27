@@ -1,0 +1,4 @@
+brk
+chdir
+clone
+execve
