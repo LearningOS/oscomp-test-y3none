@@ -221,6 +221,16 @@ impl TaskContext {
         self.ra = entry;
         self.tp = tls_area.as_usize();
     }
+    
+     /// Gets the TLS area.
+     pub fn tls(&self) -> VirtAddr {
+        VirtAddr::from(self.tp)
+    }
+
+    /// Sets the TLS area.
+    pub fn set_tls(&mut self, tls_area: VirtAddr) {
+        self.tp = tls_area.as_usize();
+    }
 
     /// Changes the page table root (`pgdl` register for loongarch64).
     ///

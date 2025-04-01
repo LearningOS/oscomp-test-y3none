@@ -1,0 +1,3 @@
+/glibc/runtest.exe -w entry-static.exe argv
+/glibc/runtest.exe -w entry-static.exe basename
+/glibc/runtest.exe -w entry-static.exe clocale_mbfuncs
