@@ -24,6 +24,10 @@ pub(crate) fn sys_writev(
     unsafe { Ok(api::sys_writev(fd, iov, iocnt)) }
 }
 
+pub fn sys_lseek(fd: i32, offset: i32, whence: i32) -> LinuxResult<isize> {
+    Ok(api::sys_lseek(fd, offset.into(), whence) as _)
+}
+
 pub(crate) fn sys_openat(
     dirfd: i32,
     path: UserConstPtr<c_char>,
