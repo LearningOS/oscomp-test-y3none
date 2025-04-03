@@ -66,6 +66,7 @@ fn run_user_app(args: &[String], envs: &[String]) -> Option<i32> {
 
 #[unsafe(no_mangle)]
 fn main() {
+    // 
     println!("#### OS COMP TEST GROUP START basic-glibc ####");
     println!("#### OS COMP TEST GROUP START basic-musl ####");
     let testcases = option_env!("AX_TESTCASES_LIST")
