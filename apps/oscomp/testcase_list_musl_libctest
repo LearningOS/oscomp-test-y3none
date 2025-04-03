@@ -173,4 +173,3 @@
 /musl/runtest.exe -w entry-dynamic.exe uselocale_0
 /musl/runtest.exe -w entry-dynamic.exe wcsncpy_read_overflow
 /musl/runtest.exe -w entry-dynamic.exe wcsstr_false_negative
-/musl/runtest.exe -w entry-static.exe pthread_condattr_setclock
