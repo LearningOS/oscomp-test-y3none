@@ -173,3 +173,4 @@
 /glibc/runtest.exe -w entry-dynamic.exe uselocale_0
 /glibc/runtest.exe -w entry-dynamic.exe wcsncpy_read_overflow
 /glibc/runtest.exe -w entry-dynamic.exe wcsstr_false_negative
+/glibc/runtest.exe -w entry-static.exe pthread_condattr_setclock
