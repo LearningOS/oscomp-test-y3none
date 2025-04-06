@@ -13,6 +13,7 @@ use starry_core::entry::run_user_app;
 
 #[unsafe(no_mangle)]
 fn main() {
+    // 
     ax_println!("#### OS COMP TEST GROUP START basic-glibc ####");
     ax_println!("#### OS COMP TEST GROUP START basic-musl ####");
     let testcases = option_env!("AX_TESTCASES_LIST")
