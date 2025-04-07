@@ -1,12 +1,12 @@
 [patch.'https://github.com/oscomp/arceos.git']
-axfeat = { path = ".arceos/api/axfeat" }
-arceos_posix_api = { path = ".arceos/api/arceos_posix_api" }
+axfeat = { path = "/home/yyy/oscomp-test-y3none/.arceos/api/axfeat" }
+arceos_posix_api = { path = "/home/yyy/oscomp-test-y3none/.arceos/api/arceos_posix_api" }
 
-axconfig = { path = ".arceos/modules/axconfig" }
-axfs = { path = ".arceos/modules/axfs" }
-axhal = { path = ".arceos/modules/axhal" }
-axlog = { path = ".arceos/modules/axlog" }
-axmm = { path = ".arceos/modules/axmm" }
-axns = { path = ".arceos/modules/axns" }
-axsync = { path = ".arceos/modules/axsync" }
-axtask = { path = ".arceos/modules/axtask" }
+axconfig = { path = "/home/yyy/oscomp-test-y3none/.arceos/modules/axconfig" }
+axfs = { path = "/home/yyy/oscomp-test-y3none/.arceos/modules/axfs" }
+axhal = { path = "/home/yyy/oscomp-test-y3none/.arceos/modules/axhal" }
+axlog = { path = "/home/yyy/oscomp-test-y3none/.arceos/modules/axlog" }
+axmm = { path = "/home/yyy/oscomp-test-y3none/.arceos/modules/axmm" }
+axns = { path = "/home/yyy/oscomp-test-y3none/.arceos/modules/axns" }
+axsync = { path = "/home/yyy/oscomp-test-y3none/.arceos/modules/axsync" }
+axtask = { path = "/home/yyy/oscomp-test-y3none/.arceos/modules/axtask" }
