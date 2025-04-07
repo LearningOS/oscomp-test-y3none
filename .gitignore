@@ -7,4 +7,7 @@ apps/*/build/
 !/vendor/**/Cargo.lock
 /.axconfig.*\
 /riscv64-linux-musl-cross
+/musl-loongarch64-1.2.2
+gcc-13.2.0-loongarch64-linux-gnu
 /sdcard-riscv64.img
+sdcard-loongarch64.img
