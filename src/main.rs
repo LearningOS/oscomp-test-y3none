@@ -13,7 +13,6 @@ use starry_core::entry::run_user_app;
 
 #[unsafe(no_mangle)]
 fn main() {
-    // 
     ax_println!("#### OS COMP TEST GROUP START basic-glibc ####");
     ax_println!("#### OS COMP TEST GROUP START basic-musl ####");
     let testcases = option_env!("AX_TESTCASES_LIST")
@@ -35,7 +34,7 @@ fn main() {
             ax_println!("#### OS COMP TEST GROUP END basic-glibc ####");
             ax_println!("#### OS COMP TEST GROUP START libctest-glibc ####");
             ax_println!("#### OS COMP TEST GROUP START libctest-musl ####");
-        } else if i == 207 {
+        } else if i == 205 {
             ax_println!("#### OS COMP TEST GROUP END libctest-musl ####");
             ax_println!("#### OS COMP TEST GROUP END libctest-glibc ####");
         }
