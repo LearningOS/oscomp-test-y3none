@@ -51,9 +51,9 @@ pub fn sys_gettid() -> LinuxResult<isize> {
     Ok(current().id().as_u64() as _)
 }
 
-pub fn sys_futex(uaddr: *mut usize, futex_op: usize, val: usize, _timeout: *const usize, _uaddr2: *mut usize, _val3: usize) -> LinuxResult<isize> {
-    Ok(0)
-}
+// pub fn sys_futex(uaddr: *mut usize, futex_op: usize, val: usize, _timeout: *const usize, _uaddr2: *mut usize, _val3: usize) -> LinuxResult<isize> {
+//     Ok(0)
+// }
 
 pub fn sys_exit(status: i32) -> ! {
     let curr = current();
