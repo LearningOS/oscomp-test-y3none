@@ -1,12 +1,79 @@
 [patch.'https://github.com/oscomp/arceos.git']
-axfeat = { path = "/home/yyy/oscomp-test-y3none/.arceos/api/axfeat" }
-arceos_posix_api = { path = "/home/yyy/oscomp-test-y3none/.arceos/api/arceos_posix_api" }
+axstd = { path = "/home/yyy/gitlab/starry-next/arceos/ulib/axstd" }
+arceos_posix_api = { path = "/home/yyy/gitlab/starry-next/arceos/api/arceos_posix_api" }
+axhal = { path = "/home/yyy/gitlab/starry-next/arceos/modules/axhal" }
+axmm = { path = "/home/yyy/gitlab/starry-next/arceos/modules/axmm" }
+axtask = { path = "/home/yyy/gitlab/starry-next/arceos/modules/axtask" }
+axsync = { path = "/home/yyy/gitlab/starry-next/arceos/modules/axsync" }
+axruntime = { path = "/home/yyy/gitlab/starry-next/arceos/modules/axruntime" }
+axns = { path = "/home/yyy/gitlab/starry-next/arceos/modules/axns" }
+axfs = { path = "/home/yyy/gitlab/starry-next/arceos/modules/axfs" }
+axconfig = { path = "/home/yyy/gitlab/starry-next/arceos/modules/axconfig" }
 
-axconfig = { path = "/home/yyy/oscomp-test-y3none/.arceos/modules/axconfig" }
-axfs = { path = "/home/yyy/oscomp-test-y3none/.arceos/modules/axfs" }
-axhal = { path = "/home/yyy/oscomp-test-y3none/.arceos/modules/axhal" }
-axlog = { path = "/home/yyy/oscomp-test-y3none/.arceos/modules/axlog" }
-axmm = { path = "/home/yyy/oscomp-test-y3none/.arceos/modules/axmm" }
-axns = { path = "/home/yyy/oscomp-test-y3none/.arceos/modules/axns" }
-axsync = { path = "/home/yyy/oscomp-test-y3none/.arceos/modules/axsync" }
-axtask = { path = "/home/yyy/oscomp-test-y3none/.arceos/modules/axtask" }
+
+[source.crates-io]
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/Azure-stars/lwext4_rust.git"]
+git = "https://github.com/Azure-stars/lwext4_rust.git"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/Mivik/page_table_multiarch.git?rev=19ededd"]
+git = "https://github.com/Mivik/page_table_multiarch.git"
+rev = "19ededd"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/Starry-OS/axprocess.git"]
+git = "https://github.com/Starry-OS/axprocess.git"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/Starry-OS/axsignal.git?rev=b5b6089"]
+git = "https://github.com/Starry-OS/axsignal.git"
+rev = "b5b6089"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/Starry-OS/weak-map.git"]
+git = "https://github.com/Starry-OS/weak-map.git"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/arceos-org/allocator.git?tag=v0.1.1"]
+git = "https://github.com/arceos-org/allocator.git"
+tag = "v0.1.1"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/arceos-org/axdriver_crates.git?tag=v0.1.2"]
+git = "https://github.com/arceos-org/axdriver_crates.git"
+tag = "v0.1.2"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/arceos-org/linked_list.git?tag=v0.1.0"]
+git = "https://github.com/arceos-org/linked_list.git"
+tag = "v0.1.0"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/arceos-org/scheduler.git?tag=v0.1.0"]
+git = "https://github.com/arceos-org/scheduler.git"
+tag = "v0.1.0"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/jasonwhite/syscalls.git?rev=92624de"]
+git = "https://github.com/jasonwhite/syscalls.git"
+rev = "92624de"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/oscomp/arceos.git"]
+git = "https://github.com/oscomp/arceos.git"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/rafalh/rust-fatfs?rev=85f06e0"]
+git = "https://github.com/rafalh/rust-fatfs"
+rev = "85f06e0"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/rcore-os/smoltcp.git?rev=2ade274"]
+git = "https://github.com/rcore-os/smoltcp.git"
+rev = "2ade274"
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "vendor"
